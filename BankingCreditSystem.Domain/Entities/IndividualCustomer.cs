@@ -1,5 +1,3 @@
-using BankingCreditSystem.Core.Repositories;
-
 namespace BankingCreditSystem.Domain.Entities;
 
 public class IndividualCustomer : Customer

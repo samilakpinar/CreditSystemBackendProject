@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\cursor\\BankProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6FF0A536-364E-4E3A-8827-BACDA1037855}|BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj|c:\\cursor\\bankproject\\bankingcreditsystem.core\\repositories\\efrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FF0A536-364E-4E3A-8827-BACDA1037855}|BankingCreditSystem.Core\\BankingCreditSystem.Core.csproj|solutionrelative:bankingcreditsystem.core\\repositories\\efrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA5FED42-A0EE-41AB-A0DC-A078EB9BB797}|BankingCreditSystem.Domain\\BankingCreditSystem.Domain.csproj|c:\\cursor\\bankproject\\bankingcreditsystem.domain\\entities\\individualcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA5FED42-A0EE-41AB-A0DC-A078EB9BB797}|BankingCreditSystem.Domain\\BankingCreditSystem.Domain.csproj|solutionrelative:bankingcreditsystem.domain\\entities\\individualcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA5FED42-A0EE-41AB-A0DC-A078EB9BB797}|BankingCreditSystem.Domain\\BankingCreditSystem.Domain.csproj|c:\\cursor\\bankproject\\bankingcreditsystem.domain\\entities\\corporatecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA5FED42-A0EE-41AB-A0DC-A078EB9BB797}|BankingCreditSystem.Domain\\BankingCreditSystem.Domain.csproj|solutionrelative:bankingcreditsystem.domain\\entities\\corporatecustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA5FED42-A0EE-41AB-A0DC-A078EB9BB797}|BankingCreditSystem.Domain\\BankingCreditSystem.Domain.csproj|c:\\cursor\\bankproject\\bankingcreditsystem.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA5FED42-A0EE-41AB-A0DC-A078EB9BB797}|BankingCreditSystem.Domain\\BankingCreditSystem.Domain.csproj|solutionrelative:bankingcreditsystem.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EfRepositoryBase.cs",
+              "DocumentMoniker": "C:\\cursor\\BankProject\\BankingCreditSystem.Core\\Repositories\\EfRepositoryBase.cs",
+              "RelativeDocumentMoniker": "BankingCreditSystem.Core\\Repositories\\EfRepositoryBase.cs",
+              "ToolTip": "C:\\cursor\\BankProject\\BankingCreditSystem.Core\\Repositories\\EfRepositoryBase.cs",
+              "RelativeToolTip": "BankingCreditSystem.Core\\Repositories\\EfRepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T12:35:52.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IndividualCustomer.cs",
+              "DocumentMoniker": "C:\\cursor\\BankProject\\BankingCreditSystem.Domain\\Entities\\IndividualCustomer.cs",
+              "RelativeDocumentMoniker": "BankingCreditSystem.Domain\\Entities\\IndividualCustomer.cs",
+              "ToolTip": "C:\\cursor\\BankProject\\BankingCreditSystem.Domain\\Entities\\IndividualCustomer.cs",
+              "RelativeToolTip": "BankingCreditSystem.Domain\\Entities\\IndividualCustomer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T12:27:53.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\cursor\\BankProject\\BankingCreditSystem.Domain\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "BankingCreditSystem.Domain\\Entities\\Customer.cs",
+              "ToolTip": "C:\\cursor\\BankProject\\BankingCreditSystem.Domain\\Entities\\Customer.cs",
+              "RelativeToolTip": "BankingCreditSystem.Domain\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T12:25:55.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CorporateCustomer.cs",
+              "DocumentMoniker": "C:\\cursor\\BankProject\\BankingCreditSystem.Domain\\Entities\\CorporateCustomer.cs",
+              "RelativeDocumentMoniker": "BankingCreditSystem.Domain\\Entities\\CorporateCustomer.cs",
+              "ToolTip": "C:\\cursor\\BankProject\\BankingCreditSystem.Domain\\Entities\\CorporateCustomer.cs",
+              "RelativeToolTip": "BankingCreditSystem.Domain\\Entities\\CorporateCustomer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T12:23:39.555Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
