@@ -18,17 +18,17 @@ namespace BankingCreditSystem.Persistence.EntityConfigurations;
                 .HasMaxLength(10)
                 .IsRequired();
             
-            builder.Property(c => c.TaxOffice)
-                .HasMaxLength(50)
-                .IsRequired();
+            //builder.Property(c => c.TaxOffice)
+            //    .HasMaxLength(50)
+            //    .IsRequired();
             
             builder.Property(c => c.CompanyRegistrationNumber)
                 .HasMaxLength(20)
                 .IsRequired();
             
-            builder.Property(c => c.AuthorizedPersonName)
-                .HasMaxLength(100)
-                .IsRequired();
+            //builder.Property(c => c.AuthorizedPersonName)
+            //    .HasMaxLength(100)
+            //    .IsRequired();
 
             builder.HasIndex(c => c.TaxNumber)
                 .IsUnique();
