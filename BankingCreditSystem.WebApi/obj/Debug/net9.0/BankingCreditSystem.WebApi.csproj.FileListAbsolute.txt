@@ -100,3 +100,4 @@ C:\cursor\BankProject\BankingCreditSystem.WebApi\obj\Debug\net9.0\refint\Banking
 C:\cursor\BankProject\BankingCreditSystem.WebApi\obj\Debug\net9.0\BankingCreditSystem.WebApi.pdb
 C:\cursor\BankProject\BankingCreditSystem.WebApi\obj\Debug\net9.0\BankingCreditSystem.WebApi.genruntimeconfig.cache
 C:\cursor\BankProject\BankingCreditSystem.WebApi\obj\Debug\net9.0\ref\BankingCreditSystem.WebApi.dll
+C:\cursor\BankProject\BankingCreditSystem.WebApi\obj\Debug\net9.0\BankingCreditSystem.WebApi.MvcApplicationPartsAssemblyInfo.cs
