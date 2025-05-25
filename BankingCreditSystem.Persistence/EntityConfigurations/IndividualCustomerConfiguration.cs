@@ -18,17 +18,17 @@ public class IndividualCustomerConfiguration : IEntityTypeConfiguration<Individu
             .HasMaxLength(50)
             .IsRequired();
             
-        builder.Property(c => c.NationalId)
+        builder.Property(c => c.IdentityNumber)
             .HasMaxLength(11)
             .IsRequired();
             
-        builder.Property(c => c.MotherName)
+        builder.Property(c => c.LastName)
             .HasMaxLength(50);
             
-        builder.Property(c => c.FatherName)
+        builder.Property(c => c.FirstName)
             .HasMaxLength(50);
 
-        builder.HasIndex(c => c.NationalId)
+        builder.HasIndex(c => c.Nationality)
             .IsUnique();
     }
 } 
