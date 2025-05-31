@@ -1,5 +1,6 @@
 using AutoMapper;
 using BankingCreditSystem.Application.Features.IndividualCustomers.Commands.Create;
+using BankingCreditSystem.Domain.Entities;
 
 namespace BankingCreditSystem.Application.Features.IndividualCustomers.Profiles
 {

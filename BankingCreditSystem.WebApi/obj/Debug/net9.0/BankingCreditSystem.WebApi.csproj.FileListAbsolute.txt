@@ -101,3 +101,6 @@ C:\cursor\BankProject\BankingCreditSystem.WebApi\obj\Debug\net9.0\BankingCreditS
 C:\cursor\BankProject\BankingCreditSystem.WebApi\obj\Debug\net9.0\BankingCreditSystem.WebApi.genruntimeconfig.cache
 C:\cursor\BankProject\BankingCreditSystem.WebApi\obj\Debug\net9.0\ref\BankingCreditSystem.WebApi.dll
 C:\cursor\BankProject\BankingCreditSystem.WebApi\obj\Debug\net9.0\BankingCreditSystem.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\cursor\BankProject\BankingCreditSystem.WebApi\bin\Debug\net9.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\cursor\BankProject\BankingCreditSystem.WebApi\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\cursor\BankProject\BankingCreditSystem.WebApi\bin\Debug\net9.0\Newtonsoft.Json.dll
