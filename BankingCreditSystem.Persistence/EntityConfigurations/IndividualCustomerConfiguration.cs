@@ -18,7 +18,7 @@ public class IndividualCustomerConfiguration : IEntityTypeConfiguration<Individu
             .HasMaxLength(50)
             .IsRequired();
             
-        builder.Property(c => c.IdentityNumber)
+        builder.Property(c => c.NationalId)
             .HasMaxLength(11)
             .IsRequired();
             
@@ -26,9 +26,6 @@ public class IndividualCustomerConfiguration : IEntityTypeConfiguration<Individu
             .HasMaxLength(50);
             
         builder.Property(c => c.FirstName)
-            .HasMaxLength(50);
-
-        builder.HasIndex(c => c.Nationality)
-            .IsUnique();
+            .HasMaxLength(50);                
     }
 } 

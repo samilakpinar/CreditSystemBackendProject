@@ -15,7 +15,7 @@ namespace BankingCreditSystem.Application.Features.IndividualCustomers.Rules
 
         public async Task NationalIdCannotBeDuplicatedWhenInserted(string nationalId)
         {
-            var result = await _individualCustomerRepository.AnyAsync(c => c.Nationality == nationalId);
+            var result = await _individualCustomerRepository.AnyAsync(c => c.NationalId == nationalId);
             if (result)
                 throw new BusinessException(IndividualCustomerMessages.NationalIdAlreadyExists);
         }
