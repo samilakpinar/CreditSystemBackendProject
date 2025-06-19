@@ -9,4 +9,9 @@ public abstract class Customer : Entity<Guid>
     public string Address { get; set; } = null!;
     public bool IsActive { get; set; }
     public decimal CreditScore { get; set; }
+
+    protected Customer()
+    {
+        IsActive = true;
+    }
 } 
