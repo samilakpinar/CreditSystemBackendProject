@@ -3,6 +3,8 @@ using MediatR;
 using BankingCreditSystem.Application.Features.IndividualCustomers.Commands.Create;
 using BankingCreditSystem.Application.Features.IndividualCustomers.Queries.GetById;
 using BankingCreditSystem.Application.Features.IndividualCustomers.Queries.GetList;
+using BankingCreditSystem.Application.Features.IndividualCustomers.Commands.Update;
+using BankingCreditSystem.Application.Features.IndividualCustomers.Commands.Delete;
 
 namespace BankingCreditSystem.WebApi.Controllers;
 
@@ -31,6 +33,21 @@ public class IndividualCustomersController : BaseController
     public async Task<IActionResult> GetList([FromQuery] GetListIndividualCustomerQuery getListIndividualCustomerQuery)
     {
         var result = await Mediator.Send(getListIndividualCustomerQuery);
+        return Ok(result);
+    }
+
+    [HttpPut]
+    public async Task<IActionResult> Update([FromBody] UpdateIndividualCustomerCommand updateIndividualCustomerCommand)
+    {
+        var result = await Mediator.Send(updateIndividualCustomerCommand);
+        return Ok(result);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete([FromRoute] Guid id)
+    {
+        var command = new DeleteIndividualCustomerCommand { Id = id };
+        var result = await Mediator.Send(command);
         return Ok(result);
     }
 } 
