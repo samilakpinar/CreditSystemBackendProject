@@ -1,31 +1,33 @@
-# Build results
-[Bb]in/
-[Oo]bj/
-
 # Visual Studio
 .vs/
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
+*.v11.suo
+*.v12.suo
+*.v15.suo
+*.v17.suo
 
-# Rider
-.idea/
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
 
-# OS files
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Logs
-*.log
-
-# Others
+# DB & cache
 *.db
-*.DS_Store
+*.db-wal
+*.v2
+*.futdcache.v2
+*.dtbcache.v2
 
-# Test results
-TestResults/
-
-# Paketler
-packages/ 
+# Project-specific files
+*.metadata.v9.bin
+*.projects.v9.bin
+*.strings.v9.bin
+DocumentLayout.json
