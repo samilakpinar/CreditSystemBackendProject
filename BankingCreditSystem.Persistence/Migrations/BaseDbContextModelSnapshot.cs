@@ -22,6 +22,117 @@ namespace BankingCreditSystem.Persistence.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("BankingCreditSystem.Domain.Entities.CreditApplication", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("ApprovedAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ApprovedTerm")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("CreditTypeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CustomerId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("InterestRate")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<decimal>("MonthlyPayment")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("RejectionReason")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<decimal>("RequestedAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("RequestedTerm")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TotalPayment")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CreditTypeId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("CreditApplications", (string)null);
+                });
+
+            modelBuilder.Entity("BankingCreditSystem.Domain.Entities.CreditType", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("BaseInterestRate")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CustomerType")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<decimal>("MaxAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("MaxTerm")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("MinAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("MinTerm")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<Guid?>("ParentCreditTypeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ParentCreditTypeId");
+
+                    b.ToTable("CreditTypes", (string)null);
+                });
+
             modelBuilder.Entity("BankingCreditSystem.Domain.Entities.Customer", b =>
                 {
                     b.Property<Guid>("Id")
@@ -133,6 +244,35 @@ namespace BankingCreditSystem.Persistence.Migrations
                     b.ToTable("IndividualCustomers", (string)null);
                 });
 
+            modelBuilder.Entity("BankingCreditSystem.Domain.Entities.CreditApplication", b =>
+                {
+                    b.HasOne("BankingCreditSystem.Domain.Entities.CreditType", "CreditType")
+                        .WithMany("CreditApplications")
+                        .HasForeignKey("CreditTypeId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("BankingCreditSystem.Domain.Entities.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("CreditType");
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("BankingCreditSystem.Domain.Entities.CreditType", b =>
+                {
+                    b.HasOne("BankingCreditSystem.Domain.Entities.CreditType", "ParentCreditType")
+                        .WithMany("SubCreditTypes")
+                        .HasForeignKey("ParentCreditTypeId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("ParentCreditType");
+                });
+
             modelBuilder.Entity("BankingCreditSystem.Domain.Entities.CorporateCustomer", b =>
                 {
                     b.HasOne("BankingCreditSystem.Domain.Entities.Customer", null)
@@ -149,6 +289,13 @@ namespace BankingCreditSystem.Persistence.Migrations
                         .HasForeignKey("BankingCreditSystem.Domain.Entities.IndividualCustomer", "Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("BankingCreditSystem.Domain.Entities.CreditType", b =>
+                {
+                    b.Navigation("CreditApplications");
+
+                    b.Navigation("SubCreditTypes");
                 });
 #pragma warning restore 612, 618
         }

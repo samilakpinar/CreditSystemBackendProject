@@ -1,9 +1,3 @@
-C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.csproj.AssemblyReference.cache
-C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.GeneratedMSBuildEditorConfig.editorconfig
-C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.AssemblyInfoInputs.cache
-C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.AssemblyInfo.cs
-C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.csproj.CoreCompileInputs.cache
-C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.sourcelink.json
 C:\cursor\BankProject\BankingCreditSystem.Persistence\bin\Debug\net9.0\BankingCreditSystem.Persistence.deps.json
 C:\cursor\BankProject\BankingCreditSystem.Persistence\bin\Debug\net9.0\BankingCreditSystem.Persistence.runtimeconfig.json
 C:\cursor\BankProject\BankingCreditSystem.Persistence\bin\Debug\net9.0\BankingCreditSystem.Persistence.dll
@@ -14,6 +8,12 @@ C:\cursor\BankProject\BankingCreditSystem.Persistence\bin\Debug\net9.0\BankingCr
 C:\cursor\BankProject\BankingCreditSystem.Persistence\bin\Debug\net9.0\BankingCreditSystem.Application.pdb
 C:\cursor\BankProject\BankingCreditSystem.Persistence\bin\Debug\net9.0\BankingCreditSystem.Core.pdb
 C:\cursor\BankProject\BankingCreditSystem.Persistence\bin\Debug\net9.0\BankingCreditSystem.Domain.pdb
+C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.csproj.AssemblyReference.cache
+C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.AssemblyInfoInputs.cache
+C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.AssemblyInfo.cs
+C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.csproj.CoreCompileInputs.cache
+C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.sourcelink.json
 C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingC.4A4F3F24.Up2Date
 C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\BankingCreditSystem.Persistence.dll
 C:\cursor\BankProject\BankingCreditSystem.Persistence\obj\Debug\net9.0\refint\BankingCreditSystem.Persistence.dll

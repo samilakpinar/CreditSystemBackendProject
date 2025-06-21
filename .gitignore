@@ -31,3 +31,19 @@ bld/
 *.projects.v9.bin
 *.strings.v9.bin
 DocumentLayout.json
+
+# Derleme çıktıları
+[Bb]in/
+[Oo]bj/
+*.dll
+*.pdb
+*.exe
+
+# Cache dosyaları
+*.cache
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.sln.docstates
