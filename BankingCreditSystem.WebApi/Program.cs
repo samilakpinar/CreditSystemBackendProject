@@ -10,6 +10,13 @@ builder.Services.AddSwaggerGen();
 
 // Add Application Services
 builder.Services.AddApplicationServices();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular", policy =>
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyHeader()
+              .AllowAnyMethod());
+});
 
 // Add Persistence Services
 builder.Services.AddPersistenceServices(builder.Configuration);
@@ -29,6 +36,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseCustomExceptionMiddleware();
+
+app.UseCors("AllowAngular"); // UseAuthorization'dan önce
 
 app.UseAuthorization();
 

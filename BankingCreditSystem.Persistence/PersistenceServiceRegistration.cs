@@ -20,6 +20,8 @@ public static class PersistenceServiceRegistration
         services.AddScoped<ICorporateCustomerRepository, CorporateCustomerRepository>();
         services.AddScoped<ICreditTypeRepository, CreditTypeRepository>();
         services.AddScoped<ICreditApplicationRepository, CreditApplicationRepository>();
+        services.AddScoped<IProductRepository, ProductRepository>();
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
 
         return services;
     }
