@@ -11,6 +11,9 @@ public class BaseDbContext : DbContext
     public DbSet<CorporateCustomer> CorporateCustomers { get; set; }
     public DbSet<CreditType> CreditTypes { get; set; }
     public DbSet<CreditApplication> CreditApplications { get; set; }
+    public DbSet<Product> Products { get; set; }
+    public DbSet<Category> Categories { get; set; }
+    public DbSet<ProductModel> ProductModels { get; set; }
 
     public BaseDbContext(DbContextOptions options) : base(options)
     {
